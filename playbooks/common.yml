@@ -24,3 +24,22 @@
       apt:
         name: wireshark
         state: latest
+
+
+- name: create directory, file, and set timezone on all servers
+  hosts: webservers,nfs,lb,db
+  become: yes
+  tasks:
+    - name: create directory
+      file:
+        path: /home/sample
+        state: directory
+
+    - name: create file
+      file:
+        path: /home/sample/ansible.txt
+        state: touch
+
+    - name: set timezone
+      timezone:
+        name: Africa/Lagos
