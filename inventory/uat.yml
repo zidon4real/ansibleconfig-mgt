@@ -1,3 +1,21 @@
-[uat-webservers]
-172.31.87.68 ansible_ssh_user='ec2-user' 
-172.31.89.227 ansible_ssh_user='ec2-user' 
+[nfs]
+172.31.83.192 ansible_ssh_user='ec2-user'
+
+[webservers]
+172.31.94.121 ansible_ssh_user='ec2-user'
+172.31.82.160 ansible_ssh_user='ec2-user'
+
+[db]
+172.31.89.199 ansible_ssh_user='ubuntu' 
+
+[lb]
+172.31.95.146 ansible_ssh_user='ubuntu'
+
+[deployment:children]
+[db]
+[lb]
+
+[deployment:vars]
+ansible_user=ubuntu
+ansible_python_interpreter=usr/libexec/platform-python
+ansible_ssh_private_key_file=~/.ssh/id_rsa
