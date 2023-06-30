@@ -1,6 +1,6 @@
 ---
-- name: Include dynamic variables 
-  hosts: all
+#- name: Include dynamic variables 
+#  hosts: all
 
 - name: import common file
   import_playbook: ../static-assignments/common.yml
