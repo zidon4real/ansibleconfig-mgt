@@ -1,3 +1,10 @@
 {
+<<<<<<< HEAD
     "ansible.python.interpreterPath": "c:\\Users\\zidon\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe"
+=======
+    "ansible.python.interpreterPath": "c:\\Users\\zidon\\AppData\\Local\\Microsoft\\WindowsApps\\python3.11.exe",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
+>>>>>>> ea58d2fe02f7d44b125cc5277e2e96805d912145
 }

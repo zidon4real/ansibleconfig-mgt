@@ -10,12 +10,3 @@
 
 [lb]
 172.31.95.146 ansible_ssh_user='ubuntu'
-
-[deployment:children]
-[db]
-[lb]
-
-[deployment:vars]
-ansible_user=ubuntu
-ansible_python_interpreter=usr/libexec/platform-python
-ansible_ssh_private_key_file=~/.ssh/id_rsa

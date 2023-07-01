@@ -1,5 +1,12 @@
-main.yml
 ---
+# defaults file for nginxRole
+enable_nginx_lb: false
+load_balancer_is_required: false
+
+#IP mapping for webservers
+Web1: 172.31.94.121
+Web2: 172.31.82.160                           
+=======
 # Used only for Debian/Ubuntu installation, as the -t option for apt.
 nginx_default_release: ""
 
@@ -96,3 +103,4 @@ nginx_log_format: |-
 
 enable_nginx_lb: false
 load_balancer_is_required: false
+>>>>>>> f11ae3297d56f7b12e2c17bc131104d6e577679e
