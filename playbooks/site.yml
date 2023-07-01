@@ -1,7 +1,7 @@
 ---
--hosts: all
+- hosts: all
 
--name: include dynamic variables
+- name: include dynamic variables
   import_playbook: ../static-assignments/common.yml
   tags:
     - always
